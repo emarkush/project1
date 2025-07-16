@@ -13,7 +13,7 @@
                 "notifyOnLateStart": false,
                 "notifyOnProjectedLate": false,
                 "status": "Success",
-                "sysId": "da8dd81f00064e17aba24f44921085bc",
+                "sysId": "3656b7d82b044a568f70020e233b8f92",
                 "variableName": "name",
                 "variableScope": "Parent",
                 "variableValue": "${_outputXPath('STDOUT', '//taskInstances/taskInstance/name')}"
@@ -278,11 +278,11 @@
             "description": null,
             "name": "outvar1",
             "options": [],
-            "sysId": "7803b1a9ab6a4b5e861847000af98317",
+            "sysId": "c2baa1b580d64ea69a03cc1dc72cdc2f",
             "value": "${_outputFromTask('pythrun','STDOUT')}"
         }
     ],
-    "version": 10,
+    "version": 13,
     "virtualResources": [],
     "waitForOutput": false
 }

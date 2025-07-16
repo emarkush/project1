@@ -13,7 +13,7 @@
                 "notifyOnLateStart": false,
                 "notifyOnProjectedLate": false,
                 "status": "Running",
-                "sysId": "2dc8a362e97e48969f9fce993cda34cf",
+                "sysId": "e99bc8d51fa4427f975858abc0910371",
                 "variableName": "out1",
                 "variableScope": "Top Level Parent",
                 "variableValue": "${_output(\"STDOUT\")}"
@@ -140,7 +140,7 @@
     "twWorkflowOnly": "-- System Default --",
     "userEstimatedDuration": null,
     "variables": [],
-    "version": 5,
+    "version": 8,
     "virtualResources": [],
     "waitForOutput": false
 }

@@ -12,8 +12,8 @@
                 "notifyOnLateStart": false,
                 "notifyOnProjectedLate": false,
                 "overrideExitCode": null,
-                "status": "",
-                "sysId": "817817cb6a954af49947610343f74897"
+                "status": null,
+                "sysId": "ea31401396b14a5fbf7d6c8c8013a390"
             }
         ],
         "emailNotifications": [],
@@ -104,6 +104,6 @@
     "timeZonePref": "-- System Default --",
     "userEstimatedDuration": "00:00:00:00",
     "variables": [],
-    "version": 1,
+    "version": 4,
     "virtualResources": []
 }
