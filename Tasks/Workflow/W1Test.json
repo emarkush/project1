@@ -1,0 +1,215 @@
+{
+    "type": "taskWorkflow",
+    "actions": {
+        "abortActions": [],
+        "emailNotifications": [],
+        "setVariableActions": [],
+        "snmpNotifications": [],
+        "systemOperations": []
+    },
+    "avgRunTime": 13305,
+    "avgRunTimeDisplay": "3 Hours 41 Minutes 45 Seconds",
+    "calculateCp": false,
+    "calendar": null,
+    "cpDuration": null,
+    "cpDurationUnit": "Minutes",
+    "criticalEndpoints": [],
+    "customField1": {
+        "label": null,
+        "value": null
+    },
+    "customField2": {
+        "label": null,
+        "value": null
+    },
+    "efDayConstraint": "None",
+    "efDuration": "00:00:00:00",
+    "efEnabled": false,
+    "efNthAmount": 5,
+    "efOffsetDuration": null,
+    "efOffsetDurationUnit": "Minutes",
+    "efOffsetPercentage": 0,
+    "efOffsetType": "Percentage",
+    "efTime": "00:00",
+    "efType": "Time",
+    "enforceVariables": false,
+    "exclusiveTasks": [],
+    "exclusiveWithSelf": false,
+    "executionRestriction": "None",
+    "exportReleaseLevel": "7.6.3.2",
+    "exportTable": "ops_task_workflow",
+    "firstRun": "2025-07-09 05:24:06 -0400",
+    "holdResources": false,
+    "instanceWait": "-- None --",
+    "lastRun": "2025-07-14 08:58:13 -0400",
+    "lastRunTime": 611,
+    "lastRunTimeDisplay": "10 Minutes 11 Seconds",
+    "layoutOption": "-- None --",
+    "lfDayConstraint": "None",
+    "lfDuration": "00:00:00:00",
+    "lfEnabled": false,
+    "lfNthAmount": 5,
+    "lfOffsetDuration": null,
+    "lfOffsetDurationUnit": "Minutes",
+    "lfOffsetPercentage": 0,
+    "lfOffsetType": "Percentage",
+    "lfTime": "00:00",
+    "lfType": "Time",
+    "lockVariables": false,
+    "logLevel": "Inherited",
+    "lsDayConstraint": "None",
+    "lsDuration": "00:00:00:00",
+    "lsEnabled": false,
+    "lsNthAmount": 5,
+    "lsTime": "00:00",
+    "lsType": "Time",
+    "maxRunTime": 65760,
+    "maxRunTimeDisplay": "18 Hours 16 Minutes 0 Seconds",
+    "minRunTime": 27,
+    "minRunTimeDisplay": "27 Seconds",
+    "name": "W1Test",
+    "notes": [],
+    "numberOfTasks": 5,
+    "opswiseGroups": [],
+    "overrideCalendar": false,
+    "overrideInstanceWait": "No",
+    "resPriority": 10,
+    "resolveNameImmediately": false,
+    "restrictionPeriod": "None",
+    "restrictionPeriodAfterDate": null,
+    "restrictionPeriodAfterTime": null,
+    "restrictionPeriodBeforeDate": null,
+    "restrictionPeriodBeforeTime": null,
+    "restrictionPeriodDateList": [],
+    "retainSysIds": true,
+    "runCount": 5,
+    "runCriteria": [],
+    "runTime": 66524,
+    "simulation": false,
+    "skippedOption": "Show Skipped",
+    "startHeld": false,
+    "startHeldReason": null,
+    "stepActions": [],
+    "stepConditions": [],
+    "summary": null,
+    "sysId": "a338dbed155e4802a6294337d6a7aa66",
+    "timeZonePref": "-- System Default --",
+    "twDelayAmount": null,
+    "twDelayDuration": "00:00:00:00",
+    "twDelayType": "None",
+    "twWaitAmount": null,
+    "twWaitDayConstraint": "None",
+    "twWaitDuration": "00:00:00:00",
+    "twWaitTime": "00:00",
+    "twWaitType": "None",
+    "twWorkflowOnly": "-- System Default --",
+    "userEstimatedDuration": null,
+    "variables": [],
+    "version": 5,
+    "virtualResources": [],
+    "workflowEdges": [
+        {
+            "condition": {
+                "value": "Success/Failure"
+            },
+            "sourceId": {
+                "taskName": "Test_odbc",
+                "value": "3"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskName": "ReportInstances",
+                "value": "4"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success/Failure"
+            },
+            "sourceId": {
+                "taskName": "Test_odbc",
+                "value": "3"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskName": "Sleep 0",
+                "value": "7"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success/Failure"
+            },
+            "sourceId": {
+                "taskName": "Test_odbc",
+                "value": "3"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskName": "echo",
+                "value": "8"
+            }
+        },
+        {
+            "condition": {
+                "value": "Success/Failure"
+            },
+            "sourceId": {
+                "taskName": "Test_odbc",
+                "value": "3"
+            },
+            "straightEdge": true,
+            "targetId": {
+                "taskName": "Print_sqloutput",
+                "value": "9"
+            }
+        }
+    ],
+    "workflowVertices": [
+        {
+            "alias": null,
+            "task": {
+                "value": "Test_odbc"
+            },
+            "vertexId": "3",
+            "vertexX": "830",
+            "vertexY": "360"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "ReportInstances"
+            },
+            "vertexId": "4",
+            "vertexX": "950",
+            "vertexY": "440"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Sleep 0"
+            },
+            "vertexId": "7",
+            "vertexX": "730",
+            "vertexY": "480"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "echo"
+            },
+            "vertexId": "8",
+            "vertexX": "830",
+            "vertexY": "490"
+        },
+        {
+            "alias": null,
+            "task": {
+                "value": "Print_sqloutput"
+            },
+            "vertexId": "9",
+            "vertexX": "650",
+            "vertexY": "460"
+        }
+    ]
+}
